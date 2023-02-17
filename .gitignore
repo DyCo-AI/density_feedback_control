@@ -1,8 +1,10 @@
-functions/
 animations/
 images/
-navigation/func/
-*.asv
+saved_data/
+navgiation/func/
+functions/
 *.mat
+*.asv
 *.csv
-.gitattributes
+*.pptx
+*.ppt
