@@ -1,0 +1,8 @@
+functions/
+animations/
+images/
+navigation/func/
+*.asv
+*.mat
+*.csv
+.gitattributes
