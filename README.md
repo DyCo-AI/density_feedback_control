@@ -9,6 +9,7 @@ $\dot{x} = u$
 
 the analytical control design $u:=\frac{\partial \rho}{\partial x}$ solves a minimum distance problem.
 
+Paper Link:
 ## Requirements
 MATLAB 2021a and above and the MATLAB symbolic toolbox
 
