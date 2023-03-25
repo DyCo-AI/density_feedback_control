@@ -21,3 +21,6 @@ Can run the following list of ".m" in the main directory for different setups (f
 <p align="center">
   <img src="images/3D_combined.png" />
 </p>
+
+
+Remark: 2-linked robot arm example in other branch
