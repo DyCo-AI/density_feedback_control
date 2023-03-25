@@ -6,3 +6,4 @@ navigation/func/
 *.mat
 *.csv
 .gitattributes
+*.pptx
