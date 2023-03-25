@@ -1,13 +1,11 @@
 # Density Feedback Control for Obstacle Avoidance
+
 <p align="center">
-  <img src="gyf/dens_nav_dyn_obs.gif" alt="animated" />
+  <img src="images/Density_Navigation_Schematic_Diagram.png" />
 </p>
 
-This work uses an analytical construction of density function $(\rho)$ for the navigation problem. This construction relies on the inverse bump function for safety constraints. Furthermore, we show that for a system of the form:
+This work presents a approach for safe control synthesis using dual formulation of the navigation problem using density function. The main contribution of this work is in the analytical construction of density function used for navigation of almost every initial condition with safety constraints. The analytically constructed density function provides us with a feedback controller capable of navigating in cluttered environment as well as high dimensional configuration space. Application of the developed framework is demonstrated on simple integrator dynamics and fully actuated robotic systems.
 
-$\dot{x} = u$
-
-the analytical control design $u:=\frac{\partial \rho}{\partial x}$ solves a minimum distance problem.
 
 Paper Link:
 ## Requirements
@@ -17,8 +15,9 @@ MATLAB 2021a and above and the MATLAB symbolic toolbox
 Can run the following list of ".m" in the main directory for different setups (for the following paper: TODO link paper)
 - ObstacleAvoidance.m : Generic navigation problem under spherical safety constraints
 - ObstacleAvoidance_3d.m : Navigation problem into higher dimension space (3d)
+- ObstacleAvoidance3D_complex.m : Navigation in higher dimension with complex obstacle shapes
 - ObstacleAvoidancePaper_circ_multi_ics.m : Test a.e. stability criteria frfom a set of initial conditions
 
 <p align="center">
-  <img src="images/saddle_points_circle_combined.png" />
+  <img src="images/3D_combined.png" />
 </p>
