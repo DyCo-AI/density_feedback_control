@@ -16,7 +16,7 @@ Can run the following list of ".m" in the main directory for different setups (f
 - ObstacleAvoidance.m : Generic navigation problem under spherical safety constraints
 - ObstacleAvoidance_3d.m : Navigation problem into higher dimension space (3d)
 - ObstacleAvoidance3D_complex.m : Navigation in higher dimension with complex obstacle shapes
-- ObstacleAvoidancePaper_circ_multi_ics.m : Test a.e. stability criteria frfom a set of initial conditions
+- ObstacleAvoidancePaper_circ_multi_ics.m : Test a.e. stability criteria from a set of initial conditions
 
 <p align="center">
   <img src="images/3D_combined.png" />
