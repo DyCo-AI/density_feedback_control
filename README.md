@@ -18,8 +18,17 @@ Can run the following list of ".m" in the main directory for different setups (f
 - ObstacleAvoidance3D_complex.m : Navigation in higher dimension with complex obstacle shapes
 - ObstacleAvoidancePaper_circ_multi_ics.m : Test a.e. stability criteria from a set of initial conditions
 
+## Results
+### Complex Environment
+We showcase our results in complex 3d environment, where our algorithm is capable of navigating cluttered environments and non-trivial obstacle shapes.
 <p align="center">
   <img src="images/3D_combined.png" />
+</p>
+
+### Robotic Arm Example
+We also consider the case in which our algorithm operates in the configuration space, showcasing its capability of navigating a fully actuated 2-link robotic arm with obstacles. Implementation details of this is located in the branch `robotic_arm`.
+<p align="center">
+  <img src="docs/swingup_gif.gif" alt="animated" />
 </p>
 
 
