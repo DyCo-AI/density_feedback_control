@@ -7,7 +7,7 @@
 This work presents a approach for safe control synthesis using dual formulation of the navigation problem using density function. The main contribution of this work is in the analytical construction of density function used for navigation of almost every initial condition with safety constraints. The analytically constructed density function provides us with a feedback controller capable of navigating in cluttered environment as well as high dimensional configuration space. Application of the developed framework is demonstrated on simple integrator dynamics and fully actuated robotic systems.
 
 
-Paper Link:
+Paper Link: https://arxiv.org/abs/2306.15830
 ## Requirements
 MATLAB 2021a and above and the MATLAB symbolic toolbox
 
