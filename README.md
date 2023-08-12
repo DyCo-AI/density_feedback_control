@@ -6,8 +6,20 @@
 
 This work presents a approach for safe control synthesis using dual formulation of the navigation problem using density function. The main contribution of this work is in the analytical construction of density function used for navigation of almost every initial condition with safety constraints. The analytically constructed density function provides us with a feedback controller capable of navigating in cluttered environment as well as high dimensional configuration space. Application of the developed framework is demonstrated on simple integrator dynamics and fully actuated robotic systems.
 
-
-Paper Link: https://arxiv.org/abs/2306.15830
+## Paper
+If using this work in the academic context, please cite the following:
+- A. Zheng, S. S. Narayanan, and U. Vaidya, “Safety using analytically
+constructed density functions,” arXiv preprint arXiv:2306.15830, 2023. [(Paper)](https://arxiv.org/pdf/2306.15830.pdf)
+  ```
+  @misc{zheng2023safety,
+      title={Safety using Analytically Constructed Density Functions}, 
+      author={Andrew Zheng and Sriram S. K. S. Narayanan and Umesh Vaidya},
+      year={2023},
+      eprint={2306.15830},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
+  }
+  ```
 ## Requirements
 MATLAB 2021a and above and the MATLAB symbolic toolbox
 
