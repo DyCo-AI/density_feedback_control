@@ -11,14 +11,15 @@ If using this work in the academic context, please cite the following:
 - A. Zheng, S. S. Narayanan, and U. Vaidya, “Safety using analytically
 constructed density functions,” arXiv preprint arXiv:2306.15830, 2023. [(Paper)](https://arxiv.org/pdf/2306.15830.pdf)
   ```
-  @misc{zheng2023safety,
-      title={Safety using Analytically Constructed Density Functions}, 
-      author={Andrew Zheng and Sriram S. K. S. Narayanan and Umesh Vaidya},
-      year={2023},
-      eprint={2306.15830},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO}
-  }
+  @ARTICLE{10238751,
+  author={Zheng, Andrew and Narayanan, Sriram S.K.S and Vaidya, Umesh},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Safe Navigation Using Density Functions}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-8},
+  doi={10.1109/LRA.2023.3311334}}
   ```
 ## Requirements
 MATLAB 2021a and above and the MATLAB symbolic toolbox
