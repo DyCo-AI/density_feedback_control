@@ -8,8 +8,7 @@ This work presents a approach for safe control synthesis using dual formulation 
 
 ## Paper
 If using this work in the academic context, please cite the following:
-- A. Zheng, S. S. Narayanan, and U. Vaidya, “Safety using analytically
-constructed density functions,” arXiv preprint arXiv:2306.15830, 2023. [(Paper)](https://arxiv.org/pdf/2306.15830.pdf)
+- A. Zheng, S. S. K. S. Narayanan and U. Vaidya, "Safe Navigation Using Density Functions," in IEEE Robotics and Automation Letters. [Paper Link](https://ieeexplore.ieee.org/abstract/document/10238751) | [Arxiv](https://arxiv.org/pdf/2306.15830.pdf)
   ```
   @ARTICLE{10238751,
   author={Zheng, Andrew and Narayanan, Sriram S.K.S and Vaidya, Umesh},
