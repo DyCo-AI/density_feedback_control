@@ -24,7 +24,7 @@ If using this work in the academic context, please cite the following:
 MATLAB 2021a and above and the MATLAB symbolic toolbox
 
 ## Run
-Can run the following list of ".m" in the main directory for different setups (for the following paper: TODO link paper)
+Can run the following list of ".m" in the main directory for different setups
 - ObstacleAvoidance.m : Generic navigation problem under spherical safety constraints
 - ObstacleAvoidance_3d.m : Navigation problem into higher dimension space (3d)
 - ObstacleAvoidance3D_complex.m : Navigation in higher dimension with complex obstacle shapes
