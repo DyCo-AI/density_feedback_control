@@ -97,10 +97,12 @@ In this comparison, we show a comparison of control barrier functions with vario
   <img src="images/robotic_arm_swing_up.gif" width="250" alt="2 link robotic arm" />
 </div>
 
+
 **Quadruped Robot**: In this example, we use the safe trajectory obtained from the density-based controller as a motion plan for quadruped locomotion. The robot uses a hierarchical framework (https://github.com/AndrewZheng-1011/legged_planner) to achieve safe navigation.
 <div align="center">
-  <img src="images/qaudruped_density_experiment.gif" width="250" alt="quadruped density experiment" />
+  <img src="images/quad_density_experiment.gif" width="400" alt="quadruped density experiment" />
 </div>
+
 ---
 
 ## Extensions
