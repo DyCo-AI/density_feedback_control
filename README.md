@@ -17,6 +17,19 @@ This repository accompanies the publication:
   doi       = {10.1109/LRA.2023.3311334}
 }
 ```
+Extension to Dynamic Environments:
+
+GitHub: https://github.com/sriram-2502/time_varying_density
+```
+@inproceedings{sriram2025_ACC,
+  title={Density Functions for Dynamic Safe Navigation of Robotic Systems},
+  author={Narayanan, Sriram SKS and Moyalan, Joseph  and Zheng, Andrew and Vaidya, Umesh},
+  booktitle={2025 American Control Conference (ACC)},
+  pages={},
+  year={2025},
+  organization={IEEE}
+}
+```
 ---
 
 ## ✨ Highlights
