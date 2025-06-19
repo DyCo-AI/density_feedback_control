@@ -6,7 +6,7 @@
 
 This repository implements a control-theoretic framework for **safe navigation** using **analytically constructed density functions**. The proposed approach guarantees **almost-everywhere (a.e.) convergence** to the goal while ensuring **obstacle avoidance** without requiring artificial potential fields or trajectory optimization.
 
-This repository accompanies the publication:
+This repository accompanies the publication: Safe Navigation Using Density Functions (RA-L)
 ```
 @ARTICLE{10238751,
   author    = {Zheng, Andrew* and Narayanan, Sriram S.K.S* and Vaidya, Umesh},
@@ -17,7 +17,7 @@ This repository accompanies the publication:
   doi       = {10.1109/LRA.2023.3311334}
 }
 ```
-Extension to Dynamic Environments:
+Extension of density functions to dynamic environments: Density Functions for Dynamic Safe Navigation of Robotic Systems (ACC)
 
 GitHub: https://github.com/sriram-2502/time_varying_density
 ```
@@ -27,6 +27,19 @@ GitHub: https://github.com/sriram-2502/time_varying_density
   booktitle={2025 American Control Conference (ACC)},
   pages={},
   year={2025},
+  organization={IEEE}
+}
+```
+
+Density functions based QP as a safety filter (similar to CBF-QP): Synthesizing Controllers for Safe Navigation Using Control Density Function
+
+```
+@inproceedings{moyalan2024synthesizing,
+  title={Synthesizing controller for safe navigation using control density function},
+  author={Moyalan, Joseph and Narayanan, Sriram SKS and Zheng, Andrew and Vaidya, Umesh},
+  booktitle={2024 American Control Conference (ACC)},
+  pages={3397--3402},
+  year={2024},
   organization={IEEE}
 }
 ```
