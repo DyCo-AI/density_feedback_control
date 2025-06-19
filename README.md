@@ -80,7 +80,13 @@ This simulation demonstrates how the density-based controller handles cluttered 
 ## Comparison with Navigation Functions
 This comparison highlights the advantage of density-based control over traditional navigation functions. While navigation functions may get stuck near saddle points or require careful tuning, the density framework provides smoother, safer trajectories and avoids undesirable local minima.
 <div align="center">
-  <img src="images/Density_vs_NF_updated_2.png" width="700" alt="Comparison with Density Functions" />
+  <img src="images/Density_vs_NF_updated_2.png" width="700" alt="Comparison with Navigation Functions" />
+</div>
+
+## Comparison with Control Density Functions
+In this comparison, we show a comparison of control barrier functions with various tuning parameters. Note that specifying the degree of safety for the density functions through the sensing region $s$ is more intuitive and easier to tune compared to the $\gamma$ parameter in CBFs.
+<div align="center">
+  <img src="images/cbf_vs_density.png" width="300" alt="Comparison with CBF" />
 </div>
 
 ---
@@ -93,8 +99,9 @@ This example shows the controller applied to a **2-link robotic arm** in its con
 
 ---
 
-## Extensions to Dynamic Environments
-In this example, the density-based controller is able to account for time-varying obstacles (gray) and track a time-varying target (green). Even though the target passes through the unsafe sets, the density-based controller always finds a safe trajectory 
+## Extensions
+
+**Dynamic Environments**: In this example, the density-based controller is able to account for time-varying obstacles (gray) and track a time-varying target (green). Even though the target passes through the unsafe sets, the density-based controller always finds a safe trajectory 
 
 Scenario 1:
 <div align="center">
@@ -103,6 +110,16 @@ Scenario 1:
 Scenario 2:
 <div align="center">
   <img src="images/lane_tracking1.gif" width="250" alt="Lane tracking 2" />
+</div>
+
+**Control Density Functions (CDFs)**: In this extension, we use density functions to formulate a quadratic program for safe control synthesis. The following example shows safe control trajectories obtained for a double-gyre flow field. 
+<div align="center">
+  <img src="images/cdf_qp_double_gyre.png" width="400" alt="CDF Double Gyre" />
+</div>
+
+**Handling Uncertainty**: Density functions can easily account for uncertainty in the system states. The following example shows safe trajectories obtained for a dynamic bicycle model in the presence of uncertainties.
+<div align="center">
+  <img src="images/cdf_qp_uncertainty.png" width="400" alt="CDF Unceratinty" />
 </div>
 
 ---
