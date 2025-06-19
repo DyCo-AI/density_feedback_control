@@ -6,43 +6,59 @@
 
 This repository implements a control-theoretic framework for **safe navigation** using **analytically constructed density functions**. The proposed approach guarantees **almost-everywhere (a.e.) convergence** to the goal while ensuring **obstacle avoidance** without requiring artificial potential fields or trajectory optimization.
 
-This repository accompanies the publication: Safe Navigation Using Density Functions (RA-L)
-```
-@ARTICLE{10238751,
-  author    = {Zheng, Andrew* and Narayanan, Sriram S.K.S* and Vaidya, Umesh},
-  journal   = {IEEE Robotics and Automation Letters}, 
-  title     = {Safe Navigation Using Density Functions}, 
-  year      = {2023},
-  pages     = {1-8},
-  doi       = {10.1109/LRA.2023.3311334}
-}
-```
-Extension of density functions to dynamic environments: Density Functions for Dynamic Safe Navigation of Robotic Systems (ACC)
+- This repository accompanies the publication: **Safe Navigation Using Density Functions** (RA-L)
+  ```
+  @ARTICLE{10238751,
+    author    = {Zheng, Andrew* and Narayanan, Sriram S.K.S* and Vaidya, Umesh},
+    journal   = {IEEE Robotics and Automation Letters}, 
+    title     = {Safe Navigation Using Density Functions}, 
+    year      = {2023},
+    pages     = {1-8},
+    doi       = {10.1109/LRA.2023.3311334}
+  }
+  ```
+- Extension of density functions to dynamic environments: **Density Functions for Dynamic Safe Navigation of Robotic Systems** (ACC)
 
-GitHub: https://github.com/sriram-2502/time_varying_density
-```
-@inproceedings{sriram2025_ACC,
-  title={Density Functions for Dynamic Safe Navigation of Robotic Systems},
-  author={Narayanan, Sriram SKS and Moyalan, Joseph  and Zheng, Andrew and Vaidya, Umesh},
-  booktitle={2025 American Control Conference (ACC)},
-  pages={},
-  year={2025},
-  organization={IEEE}
-}
-```
+  GitHub: https://github.com/sriram-2502/time_varying_density
 
-Density functions based QP as a safety filter (similar to CBF-QP): Synthesizing Controllers for Safe Navigation Using Control Density Function
+  ```
+  @inproceedings{sriram2025_ACC,
+    title={Density Functions for Dynamic Safe Navigation of Robotic Systems},
+    author={Narayanan, Sriram SKS and Moyalan, Joseph  and Zheng, Andrew and Vaidya, Umesh},
+    booktitle={2025 American Control Conference (ACC)},
+    pages={},
+    year={2025},
+    organization={IEEE}
+  }
+  ```
 
-```
-@inproceedings{moyalan2024synthesizing,
-  title={Synthesizing controller for safe navigation using control density function},
-  author={Moyalan, Joseph and Narayanan, Sriram SKS and Zheng, Andrew and Vaidya, Umesh},
-  booktitle={2024 American Control Conference (ACC)},
-  pages={3397--3402},
-  year={2024},
-  organization={IEEE}
-}
-```
+- Density functions based QP as a safety filter (similar to CBF-QP): **Synthesizing Controllers for Safe Navigation Using Control Density Function**
+
+  ```
+  @inproceedings{moyalan2024synthesizing,
+    title={Synthesizing controller for safe navigation using control density function},
+    author={Moyalan, Joseph and Narayanan, Sriram SKS and Zheng, Andrew and Vaidya, Umesh},
+    booktitle={2024 American Control Conference (ACC)},
+    pages={3397--3402},
+    year={2024},
+    organization={IEEE}
+  }
+  ```
+
+- Application to robotic systems: **Safe Motion Planning for Quadruped Robots using Density Functions**
+
+  GitHub: https://github.com/AndrewZheng-1011/legged_planner
+  ```
+  @inproceedings{narayanan2023safe,
+    title={Safe motion planning for quadruped robots using density functions},
+    author={Narayanan, Sriram SKS and Zheng, Andrew and Vaidya, Umesh},
+    booktitle={2023 Ninth Indian Control Conference (ICC)},
+    pages={263--268},
+    year={2023},
+    organization={IEEE}
+  }
+  ```
+
 ---
 
 ## ✨ Highlights
@@ -51,7 +67,7 @@ Density functions based QP as a safety filter (similar to CBF-QP): Synthesizing 
 - ✅ Feedback controller directly derived as ∇ρ(x)
 - ✅ Guarantees both safety and a.e. convergence
 - ✅ Supports static & dynamic obstacles and moving targets
-- ✅ Scales to high-dimensional systems (e.g., robotic manipulators)
+- ✅ Scales to high-dimensional systems (e.g., robotic manipulators and quadruped robots)
 
 ---
 ## Construction of Density Functions
@@ -98,7 +114,7 @@ In this comparison, we show a comparison of control barrier functions with vario
 </div>
 
 
-**Quadruped Robot**: In this example, we use the safe trajectory obtained from the density-based controller as a motion plan for quadruped locomotion. The robot uses a hierarchical framework (https://github.com/AndrewZheng-1011/legged_planner) to achieve safe navigation.
+**Quadruped Robot**: In this example, we use the safe trajectory obtained from the density-based controller as a motion plan for quadruped locomotion. The robot uses a hierarchical framework with a nonlinear MPC to achieve safe navigation.
 <div align="center">
   <img src="images/quad_density_experiment.gif" width="400" alt="quadruped density experiment" />
 </div>
@@ -136,12 +152,3 @@ Scenario 2:
 - Symbolic Math Toolbox
 
 ---
-
-## 🚀 Getting Started
-
-Clone the repository and run any of the simulation scripts in MATLAB:
-
-```bash
-git clone https://github.com/DyCo-AI/density_feedback_control.git
-cd density_feedback_control
-```
