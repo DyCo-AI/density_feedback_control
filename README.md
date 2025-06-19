@@ -150,5 +150,3 @@ Scenario 2:
 
 - MATLAB R2021a or later
 - Symbolic Math Toolbox
-
----
