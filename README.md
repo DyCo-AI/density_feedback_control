@@ -9,7 +9,7 @@ This repository implements a control-theoretic framework for **safe navigation**
 This repository accompanies the publication:
 ```
 @ARTICLE{10238751,
-  author    = {Zheng, Andrew and Narayanan, Sriram S.K.S and Vaidya, Umesh},
+  author    = {Zheng, Andrew* and Narayanan, Sriram S.K.S* and Vaidya, Umesh},
   journal   = {IEEE Robotics and Automation Letters}, 
   title     = {Safe Navigation Using Density Functions}, 
   year      = {2023},
