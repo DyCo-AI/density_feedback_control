@@ -92,11 +92,15 @@ In this comparison, we show a comparison of control barrier functions with vario
 ---
 
 ## Applications to Robotic Systems
-This example shows the controller applied to a **2-link robotic arm** in its configuration space. Even with joint-level constraints and obstacle-avoidance requirements, the controller enables a smooth, collision-free trajectory with almost everywhere safety guarantees. (switch to ```robotic_arm``` branch for this simulation).
+**Robotic Arm**: This example shows the controller applied to a **2-link robotic arm** in its configuration space. Even with joint-level constraints and obstacle-avoidance requirements, the controller enables a smooth, collision-free trajectory with almost everywhere safety guarantees. (switch to ```robotic_arm``` branch for this simulation).
 <div align="center">
   <img src="images/robotic_arm_swing_up.gif" width="250" alt="2 link robotic arm" />
 </div>
 
+**Quadruped Robot**: In this example, we use the safe trajectory obtained from the density-based controller as a motion plan for quadruped locomotion. The robot uses a hierarchical framework (https://github.com/AndrewZheng-1011/legged_planner) to achieve safe navigation.
+<div align="center">
+  <img src="images/qaudruped_density_experiment.gif" width="250" alt="quadruped density experiment" />
+</div>
 ---
 
 ## Extensions
