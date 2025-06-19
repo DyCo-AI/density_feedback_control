@@ -1,47 +1,84 @@
-# Density Feedback Control for Obstacle Avoidance
+# Safe Navigation using Density Functions
 
-<p align="center">
-  <img src="images/Density_Navigation_Schematic_Diagram.png" />
-</p>
+<div align="center">
+  <img src="images/navigation_density_diagram_2.png" width="700" alt="Density Navigation Overview" />
+</div>
 
-This work presents a approach for safe control synthesis using dual formulation of the navigation problem using density function. The main contribution of this work is in the analytical construction of density function used for navigation of almost every initial condition with safety constraints. The analytically constructed density function provides us with a feedback controller capable of navigating in cluttered environment as well as high dimensional configuration space. Application of the developed framework is demonstrated on simple integrator dynamics and fully actuated robotic systems.
+This repository implements a control-theoretic framework for **safe navigation** using **analytically constructed density functions**. The proposed approach guarantees **almost-everywhere (a.e.) convergence** to the goal while ensuring **obstacle avoidance** without requiring artificial potential fields or trajectory optimization.
 
-## Paper
-If using this work in the academic context, please cite the following:
-- A. Zheng, S. S. K. S. Narayanan and U. Vaidya, "Safe Navigation Using Density Functions," in IEEE Robotics and Automation Letters. [Paper Link](https://ieeexplore.ieee.org/abstract/document/10238751) | [Arxiv](https://arxiv.org/pdf/2306.15830.pdf)
-  ```
-  @ARTICLE{10238751,
-  author={Zheng, Andrew and Narayanan, Sriram S.K.S and Vaidya, Umesh},
-  journal={IEEE Robotics and Automation Letters}, 
-  title={Safe Navigation Using Density Functions}, 
-  year={2023},
-  volume={},
-  number={},
-  pages={1-8},
-  doi={10.1109/LRA.2023.3311334}}
-  ```
-## Requirements
-MATLAB 2021a and above and the MATLAB symbolic toolbox
+This repository accompanies the publication:
+```
+@ARTICLE{10238751,
+  author    = {Zheng, Andrew and Narayanan, Sriram S.K.S and Vaidya, Umesh},
+  journal   = {IEEE Robotics and Automation Letters}, 
+  title     = {Safe Navigation Using Density Functions}, 
+  year      = {2023},
+  pages     = {1-8},
+  doi       = {10.1109/LRA.2023.3311334}
+}
+```
+---
 
-## Run
-Can run the following list of ".m" in the main directory for different setups
-- ObstacleAvoidance.m : Generic navigation problem under spherical safety constraints
-- ObstacleAvoidance_3d.m : Navigation problem into higher dimension space (3d)
-- ObstacleAvoidance3D_complex.m : Navigation in higher dimension with complex obstacle shapes
-- ObstacleAvoidancePaper_circ_multi_ics.m : Test a.e. stability criteria from a set of initial conditions
+## ✨ Highlights
 
-## Results
-### Complex Environment
-We showcase our results in complex 3d environment, where our algorithm is capable of navigating cluttered environments and non-trivial obstacle shapes.
-<p align="center">
-  <img src="images/3D_combined.png" />
-</p>
+- ✅ Analytic density function for navigation in cluttered environments
+- ✅ Feedback controller directly derived as ∇ρ(x)
+- ✅ Guarantees both safety and a.e. convergence
+- ✅ Supports static & dynamic obstacles and moving targets
+- ✅ Scales to high-dimensional systems (e.g., robotic manipulators)
 
-### Robotic Arm Example
-We also consider the case in which our algorithm operates in the configuration space, showcasing its capability of navigating a fully actuated 2-link robotic arm with obstacles. Implementation details of this is located in the branch `robotic_arm`.
-<p align="center">
-  <img src="docs/swingup_gif.gif" alt="animated" />
-</p>
+---
+## Construction of Density Functions
+This figure shows how to construct inverse bump functions to represent arbitrarily shaped obstacles. 
+<div align="center">
+  <img src="images/psi_2d_2.png" width="700" alt="Density Function Construction" />
+</div>
 
+We use the inverse bump functions with a distance function to form the overall density function. The density takes zero value at obstacles, max value at the goal, and smoothly varying elsewhere, allowing its gradient to naturally guide the agent to the target while avoiding collisions.
+<div align="center">
+  <img src="images/density_figure.png" width="400" alt="Density Function Construction" />
+</div>
 
-Remark: 2-linked robot arm example in other branch
+## Safety in Almost Everywhere (a.e.) sense
+This figure illustrates that the controller avoids unsafe sets and converges to the target from almost all initial conditions, even in the presence of local non-convexities. The flow of the density gradient ensures that only a negligible set of initial states (defined by the zero measure set) may fail to reach the goal safely.
+<div align="center">
+  <img src="images/saddle_points_circle_combined_2.png" width="700" alt="Density Function Construction" />
+</div>
+
+## Safe Navigation in Complex and High-Dimensional Environments
+This simulation demonstrates how the density-based controller handles cluttered environments with irregular obstacle shapes, guiding the agent safely through narrow passages and around complex obstacles using only the gradient of the density.
+<div align="center">
+  <img src="images/complex_3D_combined.png" width="700" alt="Density Function Construction" />
+</div>
+
+## Comparison with Navigation Functions
+This comparison highlights the advantage of density-based control over traditional navigation functions. While navigation functions may get stuck near saddle points or require careful tuning, the density framework provides smoother, safer trajectories and avoids undesirable local minima.
+<div align="center">
+  <img src="images/Density_vs_NF_updated_2.png" width="700" alt="Density Function Construction" />
+</div>
+
+---
+
+## Applications to Robotic Systems
+This example shows the controller applied to a **2-link robotic arm** in its configuration space. Even with joint-level constraints and obstacle-avoidance requirements, the controller enables a smooth, collision-free trajectory with almost everywhere safety guarantees. (switch to ```robotic_arm``` branch for this simulation).
+<div align="center">
+  <img src="images/robotic_arm_swing_up.gif" width="250" alt="Density Function Construction" />
+</div>
+
+---
+
+## 📦 Requirements
+
+- MATLAB R2021a or later
+- Symbolic Math Toolbox
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository and run any of the simulation scripts in MATLAB:
+
+```bash
+git clone https://github.com/DyCo-AI/density_feedback_control.git
+cd density_feedback_control
+```
